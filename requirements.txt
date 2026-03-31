@@ -1,0 +1,9 @@
+# requirements.txt
+
+# Existing requirements
+
+# byte-track package
+byte-track
+
+# Fix compatibility with supervision
+supervision>=0.5.0
