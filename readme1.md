@@ -11,13 +11,13 @@ license: mit
 short_description: YOLOv8 + ByteTrack — detect & track players in sports videos
 ---
 
-# 🏃 Sports Multi-Object Tracker
+#  Sports Multi-Object Tracker
 
 > **YOLOv8n + ByteTrack** — Detect, track, and annotate all subjects in sports/event videos with persistent unique IDs, trajectory trails, speed estimation, and movement heatmaps.
 
 ---
 
-## 📦 Project Structure
+## Project Structure
 
 ```
 sports-tracker/
@@ -36,7 +36,7 @@ sports-tracker/
 
 ---
 
-## 🚀 Quick Start — Local
+##  Quick Start — Local
 
 ```bash
 # 1. Clone
@@ -107,7 +107,7 @@ python main.py --input VIDEO --output OUTPUT [options]
 
 ---
 
-## 📐 Assumptions & Limitations
+##  Assumptions & Limitations
 
 - **Person class only** — change `classes=[0]` in `detector.py` to add other classes
 - **Speed is approximate** — uses fixed `PPM=20 px/m` calibration; real accuracy needs camera homography
@@ -117,7 +117,7 @@ python main.py --input VIDEO --output OUTPUT [options]
 
 ---
 
-## 🔬 Technical Choices
+##  Technical Choices
 
 **Why ByteTrack over DeepSORT?**
 ByteTrack does not rely on appearance embeddings for re-identification. In sports, athletes wear identical jerseys — appearance-based re-ID fails completely. ByteTrack's two-pass IoU association handles this robustly.
